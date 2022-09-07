@@ -107,14 +107,14 @@ function App() {
             <form onSubmit={(e)=>{addTask(e)}} className='task-form' autoComplete="off">
 
                 <div>
-                  <label className={`displayBold`}>Enter Task : </label>
+                  <label className={`displayBold smallFont`}>Enter Task : </label>
                   <input type={'text'} required={true} name='TaskTitle'  />
                 </div>
 
 
 
                 <div className={`displayCenter `}>
-                  <label className={`displayBold width45`}>Duration : </label>
+                  <label className={`displayBold smallFont width45`}>Duration : </label>
 
                   <div>
                       <div>
@@ -131,7 +131,7 @@ function App() {
 
 
                 <div className={`displayCenter `}>
-                  <label className={`displayBold width45`}>Alert Before  : </label>
+                  <label className={`displayBold smallFont width45`}>Alert Before  : </label>
                   <div>
                       <div>
                       Min
