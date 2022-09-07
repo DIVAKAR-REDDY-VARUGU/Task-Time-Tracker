@@ -1,38 +1,237 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+label:focus-visible {
+  border: 0;
+}
+.num{
+  font-family: 'Ubuntu', sans-serif;
+}
+.inline{
+  display: inline;
+}
+.body{
+  padding: 0%;
+  margin: 0;
+}
+.bgimg3{
+  background-image: url("https://wallpapercave.com/wp/wp3428796.jpg");
+}
+.bgimg0{
+  background-image: url("https://www.patriotsoftware.com/wp-content/uploads/2017/06/time-and-half-1.jpg");
+}
+.bgimg1{
+  background-image: url("https://billstainton.com/stainton/wp-content/uploads/2018/11/4k-wallpaper-clock-countdown-1447235-scaled.jpg");
+}
+.bgimg2{
+  background-image: url("https://img.wallpapersafari.com/desktop/1680/1050/63/6/8MgWSt.jpg");
+}
+.body--wrapper{
+  position: relative;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.topbar--wrapper:hover{
+  background-color:greenyellow;
+  box-shadow:0 0 12px green;
+}
+.topbar--wrapper{
+  border: 1px solid;
+  cursor: pointer;
+  padding:10px 5px;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 150px;
+  position: sticky;
+  top: 50px;
+  left: 20px;
+  background-color:whitesmoke;
+}
+.lessTop{
+  margin-top:5px;
+}
+.moreTop{
+  top:100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.Task--content{
+  width: 90%;
+}
+.TaskTitle{
+  font-weight: bold;
+  font-size:large;
+  padding:0px 0 10px 10px;
+  
+}
+.Task--content--data{
+  display:flex;
+  justify-content: space-around;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.App{
+  width:100vw;
+  height:120vh;
+}
+.alert-msg{
+  color:red;
+  font-size:medium;
+  font-weight:bold;
+}
+
+.black-screen{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.83);
+  z-index: 1;
+}
+.input-task--wrapper{
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 70%;
+  height: 80%;
+  border-radius:10px;
+  background-color: rgba(27, 164, 219, 0.75);
+  box-shadow:0 0 15px rgba(47, 153, 206, 0.804);
+}
+
+
+.task-form{
+  padding: 50px 0 20px 0;
+  height:80% ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.submit{
+  padding:10px 15px ;
+  border: 2px solid rgba(207, 235, 93, 0.899);
+  box-shadow:0 0 4px rgba(237, 247, 55, 0.808);
+  background-color: rgba(237, 247, 55, 0.808);;
+  border-radius: 5px;
+  color: rgba(255, 111, 0, 0.877);
+  font-size:large;
+}
+.submit:hover{
+  box-shadow:0 0 16px rgba(247, 186, 55, 0.808);
+  background-color: rgba(247, 186, 55, 0.808);
+  color: rgba(47, 19, 124, 0.955);
+
+}
+
+
+
+
+
+.Tasks--wrapper{
+  width:100vw;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 90px;
+}
+.Task--container{
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  padding: 20px 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width:80%;
+  background-color: rgba(240, 248, 255, 0.73);
+}
+.redBg{
+  background-color: rgba(229, 24, 48, 0.57);
+}
+.redFont{
+  color:red;
+}
+.greenFont{
+  color:rgb(89, 255, 0);
+}
+.AddTask{
+  padding:10px;
+  border-radius: 5px;
+  border:1px solid;
+  margin-top:50px;
+}
+.AddTask:hover{
+  background-color:rgba(61, 72, 222, 0.825);
+  box-shadow: 0 0 10px rgb(61, 72, 222);
+  color:white;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+.displayNone{
+  display: none;
+}
+.displayBlock{
+  display:block;
+}
+.displayCenter{
+
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+.displayBold{
+  padding-right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.delete--wrapper{
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  padding: 10px;
+}
+.delete--wrapper:hover{
+  background-color:rgba(255, 0, 0, 0.722);
+  box-shadow: 0 0 10px red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.Exit{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size:medium;
+  font-weight:bold;
+}
+.Exit:hover{
+  background-color: rgba(255, 162, 0, 0.74);
+  color: red;
+  border-color:transparent ;
+}
+.fa-trash{
+  font-size: 26px;
+  color:rgba(49, 21, 113, 0.885);
+}
+.fa-trash:hover{
+  color: black
+}
+
+.subtitle{
+
+}
+
+
+
+::-webkit-scrollbar{
+  width:0;
 }
