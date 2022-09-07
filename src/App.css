@@ -261,8 +261,8 @@ label:focus-visible {
   input[type=text],input[type=number]{
     width:50%;
   }
-  .width40{
-    width:40%;
+  .width45{
+    width:45%;
   }
   .smallFontAndWeight{
     padding: 0 20px;
