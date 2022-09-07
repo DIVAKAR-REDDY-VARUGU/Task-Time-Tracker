@@ -102,7 +102,7 @@ function App() {
   return (
     <>
       <div className={`black-screen ${!inputTask.open?"displayNone":''}`}>
-        <div className={`input-task--wrapper `}>
+        <div className={`input-task--wrapper smallFontAndWeight`}>
             <button className=' Exit num' onClick={()=>{exitInputTask()}}> X </button>
             <form onSubmit={(e)=>{addTask(e)}} className='task-form' autoComplete="off">
 
@@ -114,7 +114,7 @@ function App() {
 
 
                 <div className={`displayCenter `}>
-                  <label className={`displayBold`}>Duration : </label>
+                  <label className={`displayBold width40`}>Duration : </label>
 
                   <div>
                       <div>
@@ -131,7 +131,7 @@ function App() {
 
 
                 <div className={`displayCenter `}>
-                  <label className={`displayBold`}>Alert Before  : </label>
+                  <label className={`displayBold width40`}>Alert Before  : </label>
                   <div>
                       <div>
                       Min

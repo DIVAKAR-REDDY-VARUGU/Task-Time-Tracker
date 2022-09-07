@@ -41,6 +41,8 @@ label:focus-visible {
   background-color:greenyellow;
   box-shadow:0 0 12px green;
 }
+
+
 .topbar--wrapper{
   border: 1px solid;
   cursor: pointer;
@@ -235,3 +237,46 @@ label:focus-visible {
 ::-webkit-scrollbar{
   width:0;
 }
+
+
+
+@media only screen and (max-width: 900px) {
+  .Tasks--wrapper{
+    margin-left: 0%;
+  }
+  .displayBold{
+    padding:10px 5px ;
+    font-size: 18px;
+  }
+  .topbar--wrapper{
+    left:10px;
+    top:80%
+  }
+  .moreTop{
+    top:87%;
+  }
+  .input-task--wrapper{
+    width:85%;
+  }
+  input[type=text],input[type=number]{
+    width:50%;
+  }
+  .width40{
+    width:40%;
+  }
+  .smallFontAndWeight{
+    padding: 0 20px;
+    font-size: smaller;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
