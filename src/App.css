@@ -274,6 +274,11 @@ label:focus-visible {
 }
 
 
+@media only screen and (max-width: 450px) {
+  .width100{
+    width:100%;
+  }
+}
 
 
 

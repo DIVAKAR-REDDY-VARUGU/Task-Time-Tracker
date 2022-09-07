@@ -113,7 +113,7 @@ function App() {
 
 
 
-                <div className={`displayCenter `}>
+                <div className={`displayCenter width100`}>
                   <label className={`displayBold smallFont width45`}>Duration : </label>
 
                   <div>
@@ -130,7 +130,7 @@ function App() {
                 </div>
 
 
-                <div className={`displayCenter `}>
+                <div className={`displayCenter width100`}>
                   <label className={`displayBold smallFont width45`}>Alert Before  : </label>
                   <div>
                       <div>
