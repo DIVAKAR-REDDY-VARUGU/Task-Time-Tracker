@@ -197,7 +197,7 @@ function App() {
 
                         {
                           (item.trackTime)&&<div>
-                              <span className={`num displayBold`}>Task UpTime {`  `+item.minTime}</span> Min : <span className={`num displayBold`}>{item.secTime}</span> Sec
+                              <span className={`num displayBold`}>Task UpTime {item.minTime}</span>Min : <span className={`num displayBold`}>{item.secTime}</span>Sec
                              
                           </div>
                         }
